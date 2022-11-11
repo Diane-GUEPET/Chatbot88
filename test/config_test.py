@@ -9,12 +9,11 @@ class TestConfig:
     """Configuration for the bot."""
 
     PORT = 3978
-    APP_ID = os.environ.get("MicrosoftAppId","")
-    APP_PASSWORD = os.environ.get("MicrosoftAppPassword","")
-    LUIS_APP_ID = os.environ.get("LuisAppId", "")
-    LUIS_API_KEY = os.environ.get("LuisAPIKey", "")
+    APP_ID = os.environ.get("MicrosoftAppId")
+    APP_PASSWORD = os.environ.get("MicrosoftAppPassword")
+    LUIS_APP_ID = os.environ.get("LuisAppId")
+    LUIS_API_KEY = os.environ.get("LuisAPIKey")
     LUIS_API_HOST_NAME = os.environ.get("LuisAPIHostName", "westeurope.api.cognitive.microsoft.com")
     LUIS_API_ENDPOINT = os.environ.get("LuisAPIEndPoint", "https://myflymebot.cognitiveservices.azure.com")
     APPINSIGHTS_INSTRUMENTATION_KEY = os.environ.get(
-        "AppInsightsInstrumentationKey",""
-    )
+        "AppInsightsInstrumentationKey")

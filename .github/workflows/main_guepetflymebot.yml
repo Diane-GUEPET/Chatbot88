@@ -35,11 +35,11 @@ jobs:
 
       - name: Test application
         env:
-          APPINSIGHTS_INSTRUMENTATION_KEY: ${{ secrets.APPINSIGHTSINSTRUMENTATIONKEY}}
-          LUIS_API_KEY: ${{ secrets.LUISAPIKEY}}
-          LUIS_APP_ID: ${{ secrets.LUISAPPID}}
-          APP_ID: ${{ secrets.APP_ID}}
-          APP_PASSWORD: ${{ secrets.APP_PASSWORD}}
+          AppInsightsInstrumentationKey: ${{ secrets.APPINSIGHTSINSTRUMENTATIONKEY}}
+          LuisAPIKey: ${{ secrets.LUISAPIKEY}}
+          LuisAppId: ${{ secrets.LUISAPPID}}
+          MicrosoftAppId: ${{ secrets.APP_ID}}
+          MicrosoftAppPassword: ${{ secrets.APP_PASSWORD}}
         run: pytest
       
       - name: Upload artifact for deployment jobs
