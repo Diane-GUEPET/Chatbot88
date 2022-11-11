@@ -1,8 +1,8 @@
 from azure.cognitiveservices.language.luis.runtime import LUISRuntimeClient
-from config_test import TestConfig
+from config import DefaultConfig
 from msrest.authentication import CognitiveServicesCredentials
 
-CONFIG = TestConfig()
+CONFIG = DefaultConfig()
 
 runtime_credentials = CognitiveServicesCredentials(CONFIG.LUIS_API_KEY)
 client_runtime = LUISRuntimeClient(endpoint=CONFIG.LUIS_API_ENDPOINT, credentials=runtime_credentials)
