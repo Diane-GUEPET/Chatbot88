@@ -16,10 +16,10 @@ class DefaultConfig:
     APP_PASSWORD = os.environ.get("APP_PASSWORD", "4f5a8008-ba00-476d-b552-328c7242cdb6")
     
     ## Luis Service ##
-    LUIS_APP_ID = os.environ.get("LUISAPPID", "2805db0b-a3d3-4708-9fd5-8b2388702701")
-    LUIS_API_KEY = os.environ.get("LUISAPIKEY", "ee900aafeadf4cbe8a2b9571984bc2bb")
+    LUIS_APP_ID = os.environ.get("LUISAPPID", "7a937442-e53c-4ad8-8bd6-db1e766c721c")
+    LUIS_API_KEY = os.environ.get("LUISAPIKEY", "5fbcaf962489475a84324f147845851b")
     LUIS_API_HOST_NAME = os.environ.get("LUIS_API_HOST_NAME", "westeurope.api.cognitive.microsoft.com")
-    LUIS_API_ENDPOINT = os.environ.get("LUIS_API_ENDPOINT", "https://myflymebot.cognitiveservices.azure.com")
+    LUIS_API_ENDPOINT = os.environ.get("LUIS_API_ENDPOINT", "https://myflymebot.cognitiveservices.azure.com/")
 
     ## App Insight Service ##
     APPINSIGHTS_INSTRUMENTATION_KEY = os.environ.get(
