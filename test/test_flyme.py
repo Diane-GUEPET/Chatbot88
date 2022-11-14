@@ -4,8 +4,7 @@ from msrest.authentication import CognitiveServicesCredentials
 
 CONFIG = DefaultConfig()
 
-runtime_credentials = CognitiveServicesCredentials(CONFIG.LUIS_API_KEY)
-client_runtime = LUISRuntimeClient(endpoint=CONFIG.LUIS_API_ENDPOINT, credentials=runtime_credentials)
+client_runtime = LUISRuntimeClient(CONFIG.LUIS_API_HOST_NAME, CognitiveServicesCredentials(CONFIG.LUIS_API_KEY))
 
 
 def test_greetings():
